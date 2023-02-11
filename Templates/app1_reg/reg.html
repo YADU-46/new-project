@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>REGISTRATION PAGE</title>
+ </head>
+  <body>
+    <h1>WELCOME TO REGISTRATION PAGE</h1>
+<form class="cls1" action="index.html" method="post">
+  NAME : <input type="text" name="" value="">
+  <br>
+  <br>
+  AGE : <input type="number" name="" value="">
+  <br>
+  <br>
+  GENDER: <input type="text" name="" value="">
+  <br>
+  <br>
+  Email : <input type="email" name="" value="">
+  <br>
+  <br>
+  PHONE:<input type="number" name="" value="">
+  <br>
+  <br>
+  <br>
+  <input type="submit" name="SUMBIT" value="SUBMIT">
+</form>
+    <hr>
+  <div>
+    <h1>ENTER DETAILS HERE</h1>
+    <form action="" method="POST">
+      {{form.as_p}}
+      {% csrf_token %}
+      <input type="submit" name="submit" id="submit">
+    </form>
+  </div>
+  </body>
+</html>
+

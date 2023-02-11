@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Marks</title>
+    <style>
+      div{
+      text-align:center;
+      }
+
+    </style>
+  </head>
+  <body>
+<h1>ENTER THE STUDENT MARKS HERE</h1>
+<div class="">
+<h1>ENTER THE MARKS HERE</h1>
+  <form method="POST">
+{{%form_m.as_p%}}
+{{% csrf_token %}}
+    <input type="submit" name="submit" value="submit">
+    <br>
+    </form>
+
+
+</div>
+  </body>
+</html>
